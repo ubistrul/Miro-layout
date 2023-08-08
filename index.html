@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Miro - Main page</title>
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="logo">
+                <img src="./../../img/miro-logo.svg" alt="Лого">
+            </div>
+            <nav class="nav-block">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#!">Продукт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Решения</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Ресурсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Предприятия</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Тарифы</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="lang-change">
+                    <img class="lang-change__image" src="./../../img/lang-change.svg" alt="Смена Языка">
+                </button>
+                <button class="button header__registration">Регистрация</button>
+            </div>
+
+            <!-- <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button> -->
+        </div>
+    </div>
+</header>
+
+	<main>
+		<section class="hero">
+  <div class="container-main">
+    <div class="hero__block">
+      <div class="hero__content">
+        <header class="hero__header">
+          <h1 class="main-title hero__title">
+            Место для командной работы
+          </h1>
+          <p class="main-text hero__descr">Интерактивная онлайн-доска для совместной работы команд — в любое время, в
+            любом месте.
+          </p>
+        </header>
+        <form class="hero__form" action="#">
+          <input class="input hero__input" type="email" name="null" id="" placeholder="Ваш email" required>
+          <button class="button hero__button" type="submit">Начать бесплатно</button>
+          <small class="hero__form-text">Всегда бесплатно — кредитная карта не нужна</small>
+        </form>
+        <footer class="hero__partners">
+          <span class="main-text hero__users-counts">45M+ пользователей</span>
+          <img src="./../../img/hero/walmart.svg" class="hero__partner" alt="Логотип Walmart">
+          <img src="./../../img/hero/cisco.svg" class="hero__partner" alt="Логотип Cisco">
+          <img src="./../../img/hero/deloitte.svg" class="hero__partner" alt="Логотип Deloitte.">
+          <img src="./../../img/hero/volvo.svg" class="hero__partner" alt="Логотип Volvo">
+        </footer>
+      </div>
+      <img class="hero__image" src="./../../img/hero/hero-img.jpg" alt="Пример работы Miro" width="604" height="461">
+    </div>
+  </div>
+</section>
+		<section class="distant">
+  <div class="container-main">
+    <div class="distant__wrapper">
+      <div class="distant__content">
+        <h2 class="main-title distant__title">Работайте вместе, где бы вы ни находились</h2>
+        <p class="main-text distant__description">Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда
+          может общаться, сотрудничать и совместно заниматься творчеством в одном пространстве, из любой точки мира.</p>
+        <a class="more-link distant__link" href="#!">Узнать больше</a>
+      </div>
+      <img class="distant__image" src="./../../img/distant/distant-image.jpg" alt="Дистанционная работа вместе с Miro"
+        width="550px" height="535px">
+    </div>
+  </div>
+</section>
+		<section class="all-in">
+  <div class="container-main">
+    <div class="all-in__wrapper">
+      <img class="all-in__image" src="./../../img/all-in/all-in.jpg" alt="Всё с помощью только лишь Miro" width="550px"
+        height="498px">
+      <div class="all-in__content">
+        <h2 class="main-title all-in__title">Закройте лишние вкладки — всё уже здесь</h2>
+        <p class="main-text all-in__description">Редактируете ли вы документы в Google Docs, работаете над задачами в
+          Jira или созваниваетесь в Zoom, Miro предлагает более 100 интеграций с уже известными и полюбившимися вам
+          инструментами.</p>
+        <a class="more-link all-in__link" href="#!">Узнать больше</a>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="workstyle">
+  <div class="container-main">
+    <div class="workstyle__wrapper">
+      <h2 class="main-title workstyle__title">Подходит для вашего стиля работы</h2>
+
+      <div class="tabs workstyle__tabs">
+        <header class="tabs__buttons">
+          <button class="tabs__button" data-tab="tab1">Мозговые штурмы</button>
+          <button class="tabs__button" data-tab="tab2">Диаграммы</button>
+          <button class="tabs__button" data-tab="tab3">Встречи</button>
+          <button class="tabs__button" data-tab="tab4">SCRUM</button>
+          <button class="tabs__button" data-tab="tab5">Картирование</button>
+          <button class="tabs__button" data-tab="tab6">Дизайн-исследования</button>
+          <button class="tabs__button" data-tab="tab7">Планирование</button>
+        </header>
+      </div>
+      <div class="tabs__wrapper">
+
+        <div class="tabs__content" id="tab1">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Мозговой штурм</h3>
+            <p class="tabs__description">Генерируйте творческие идеи и развивайте их с помощью стикеров, изображений,
+              интеллект-карт, видео,
+              рисования и не только.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="./img/workstyle/tab-1.jpg" alt="Tab1">
+        </div>
+
+        <div class="tabs__content" id="tab2">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Диаграммы</h3>
+            <p class="tabs__description">Анализируйте данные и визуализируйте результаты с помощью наглядных диаграмм и
+              графиков. Диаграммы
+              позволяют легко представить сложные данные и выявить закономерности и тренды.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image2.jpg" alt="Tab2">
+        </div>
+
+        <div class="tabs__content" id="tab3">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Встречи</h3>
+            <p class="tabs__description">Организуйте эффективные встречи с помощью различных инструментов и методов.
+              Планируйте повестку
+              дня, ведите протоколы, делитесь документами и обсуждайте идеи с командой.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image3.jpg" alt="Tab3">
+        </div>
+
+        <div class="tabs__content" id="tab4">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">SCRUM</h3>
+            <p class="tabs__description">Планируйте и управляйте проектами с помощью методологии SCRUM. Определяйте
+              задачи, устанавливайте сроки
+              и отслеживайте прогресс команды в режиме реального времени.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image4.jpg" alt="Tab4">
+        </div>
+
+        <div class="tabs__content" id="tab5">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Картирование</h3>
+            <p class="tabs__description">Анализируйте и структурируйте данные с помощью картирования и схем.
+              Картирование позволяет
+              визуализировать сложные информации и выявлять взаимосвязи между различными элементами.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image5.jpg" alt="Tab5">
+        </div>
+
+        <div class="tabs__content" id="tab6">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Дизайн-исследования</h3>
+            <p class="tabs__description">Исследуйте потребности и предпочтения пользователей, а также выявляйте
+              возможности для
+              улучшения продуктов и сервисов с помощью дизайн-исследований. Разрабатывайте прототипы и тестируйте их на
+              реальных
+              пользователях.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image6.jpg" alt="Tab6">
+        </div>
+
+        <div class="tabs__content" id="tab7">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Планирование</h3>
+            <p class="tabs__description">Разрабатывайте стратегии и планы действий для достижения целей проектов.
+              Планирование
+              позволяет определить необходимые ресурсы, сроки и этапы работы, чтобы обеспечить успешную реализацию
+              задач.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image7.jpg" alt="Tab7">
+        </div>
+
+      </div>
+    </div>
+</section>
+		<section class="for-all-teams">
+  <div class="container-main">
+    <div class="for-all-teams__wrapper">
+      <h2 class="main-title for-all-teams__title">Создан для всех типов команд</h2>
+
+      <div class="tabs for-all-teams__tabs">
+        <header class="tabs__buttons tabs__buttons--for-all-teams">
+          <button class="tabs__button" data-tab="tab1">UX и дизайн</button>
+          <button class="tabs__button" data-tab="tab2">Маркетинг</button>
+          <button class="tabs__button" data-tab="tab3">Управление продуктом</button>
+          <button class="tabs__button" data-tab="tab4">Разработка</button>
+          <button class="tabs__button" data-tab="tab5">Консалтинг</button>
+          <button class="tabs__button" data-tab="tab6">Agile-коучинг -исследования</button>
+          <button class="tabs__button" data-tab="tab7">Продажи</button>
+        </header>
+      </div>
+      <div class="tabs__wrapper">
+
+        <div class="tabs__content" id="tab1">
+          <div class="tabs__text-content">
+            <ul class="tabs__list">
+              <li class="tabs__list-item">Создавайте вайрфреймы</li>
+              <li class="tabs__list-item">Подключайте заказчиков к процессу дизайна</li>
+              <li class="tabs__list-item">Проводите вовлекающие дизайн-воркшопы</li>
+            </ul>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+
+            <div class="integrations">
+              <p class="integrations__title">Интегрируйте ваши любимые инструменты</p>
+              <ul class="integrations__list">
+
+                <li class="integrations__list-item">
+                  <img src="./img/for-all-teams/logo-1.png" alt="Лого ...">
+                </li>
+
+                <li class="integrations__list-item">
+                  <img src="./img/for-all-teams/logo-2.png" alt="Лого ...">
+                </li>
+
+                <li class="integrations__list-item">
+                  <img src="./img/for-all-teams/logo-3.png" alt="Лого ...">
+                </li>
+
+                <li class="integrations__list-item">
+                  <img src="./img/for-all-teams/logo-4.png" alt="Лого ...">
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <img class="tabs__image" src="./img/for-all-teams/for-all-teams-1.jpg" alt="Tab1">
+        </div>
+
+        <div class="tabs__content" id="tab2">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Диаграммы</h3>
+            <p class="tabs__description">Анализируйте данные и визуализируйте результаты с помощью наглядных диаграмм
+              и
+              графиков. Диаграммы
+              позволяют легко представить сложные данные и выявить закономерности и тренды.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image2.jpg" alt="Tab2">
+        </div>
+
+        <div class="tabs__content" id="tab3">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Встречи</h3>
+            <p class="tabs__description">Организуйте эффективные встречи с помощью различных инструментов и методов.
+              Планируйте повестку
+              дня, ведите протоколы, делитесь документами и обсуждайте идеи с командой.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image3.jpg" alt="Tab3">
+        </div>
+
+        <div class="tabs__content" id="tab4">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">SCRUM</h3>
+            <p class="tabs__description">Планируйте и управляйте проектами с помощью методологии SCRUM. Определяйте
+              задачи, устанавливайте сроки
+              и отслеживайте прогресс команды в режиме реального времени.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image4.jpg" alt="Tab4">
+        </div>
+
+        <div class="tabs__content" id="tab5">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Картирование</h3>
+            <p class="tabs__description">Анализируйте и структурируйте данные с помощью картирования и схем.
+              Картирование позволяет
+              визуализировать сложные информации и выявлять взаимосвязи между различными элементами.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image5.jpg" alt="Tab5">
+        </div>
+
+        <div class="tabs__content" id="tab6">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Дизайн-исследования</h3>
+            <p class="tabs__description">Исследуйте потребности и предпочтения пользователей, а также выявляйте
+              возможности для
+              улучшения продуктов и сервисов с помощью дизайн-исследований. Разрабатывайте прототипы и тестируйте их
+              на
+              реальных
+              пользователях.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image6.jpg" alt="Tab6">
+        </div>
+
+        <div class="tabs__content" id="tab7">
+          <div class="tabs__text-content">
+            <h3 class="tabs__title">Планирование</h3>
+            <p class="tabs__description">Разрабатывайте стратегии и планы действий для достижения целей проектов.
+              Планирование
+              позволяет определить необходимые ресурсы, сроки и этапы работы, чтобы обеспечить успешную реализацию
+              задач.</p>
+            <a class="more-link tabs__link" href="#!">Узнать больше</a>
+          </div>
+          <img class="tabs__image" src="image7.jpg" alt="Tab7">
+        </div>
+
+      </div>
+    </div>
+</section>
+		<section class="features">
+  <div class="container-main">
+    <div class="features__wrapper">
+      <header class="features__header">
+        <h2 class="main-title features__title">Почему и крупные, и небольшие компании доверяют Miro</h2>
+        <a class="more-link features__link" href="#!">Связаться с отделом продаж</a>
+      </header>
+      <ul class="features__list">
+
+        <li class="features__list-item features__list-item--one"">
+          Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001
+        </li>
+
+        <li class=" features__list-item features__list-item--two">
+          Платформа номер 1 для совместной работы, согласно отзывам на G2
+        </li>
+
+        <li class="features__list-item features__list-item--three">
+          Почти все компании из списка Fortune 100 используют Miro
+        </li>
+
+        <li class="features__list-item features__list-item--four">
+          шаблонов, созданных сообществом и экспертами
+        </li>
+
+        <li class="features__list-item features__list-item--five">
+          пользователей во всём мире
+        </li>
+
+        <li class="features__list-item features__list-item--six">
+          интеграций с различными онлайн-сервисами и инструментами
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+		<section class="reviews">
+  <div class="container-main">
+    <div class="reviews__wrapper">
+      <header class="reviews__header">
+        <h2 class="main-title reviews__title">Нравится лучшим командам мира</h2>
+        <a class="more-link reviews__link" href="#!">Все истории клиентов</a>
+      </header>
+    </div>
+    <ul class="reviews__list">
+      <li class="reviews__review-card">
+        <img class="reviews__company-logo" src="./img/reviews/logo-vmware.svg" alt="Логотип 'VmWare'">
+        <p class="reviews__review-text">«Когда пришла пандемия, мы беспокоились, что креативность и продуктивность
+          команды пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался идеальным
+          инструментом для совместной работы в удаленном режиме».</p>
+        <div class="autor reviews__autor">
+          <img class="autor__image" src="./img/reviews/person-1.png" alt="">
+          <div class="autor__info-wrapper">
+            <span class="autor__name">Роксанна Мустафа</span>
+            <span class="autor__job-title">Design Team Lead в VMware</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="reviews__review-card">
+        <img class="reviews__company-logo" src="./img/reviews/logo-docu_sign.svg" alt="Логотип 'DocuSign'">
+        <p class="reviews__review-text">«Miro помогает решить проблему, связанную с основным пробелом в проектировании
+          изделий: позволяет управлять задачами с участием проектировщиков изделий, проекты которых реализуются с
+          помощью разных инструментов.».</p>
+        <div class="autor reviews__autor">
+          <img class="autor__image" src="./img/reviews/person-2.png" alt="Джейн Эшли">
+          <div class="autor__info-wrapper">
+            <span class="autor__name">Джейн Эшли</span>
+            <span class="autor__job-title">Директор по проектированию DocuSign</span>
+          </div>
+
+        </div>
+      </li>
+
+      <li class="reviews__review-card">
+        <img class="reviews__company-logo" src="./img/reviews/logo-frog.svg" alt="Логотип 'frog'">
+        <p class="reviews__review-text">«Когда мы начали использовать Miro, скептицизм сменился верой в инновации,
+          теперь у нас есть инструмент, который лежит в основе любой работы, и мы продолжим использовать его и в
+          будущем».</p>
+        <div class="autor reviews__autor">
+          <img class="autor__image" src="./img/reviews/person-3.png" alt="Лора Бейрд">
+          <div class="autor__info-wrapper">
+            <span class="autor__name">Лора Бейрд</span>
+            <span class="autor__job-title">Associate Design Director в frog</span>
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+		<section class="join-us">
+  <div class="container-main">
+    <div class="join-us__wrapper">
+      <div class="join-us__content">
+        <h2 class="main-title join-us__title">Присоединяйтесь к 45M миллионам пользователей уже сегодня</h2>
+        <p class="join-us__description">Начните бесплатно и перейдите на другой тариф в любое время. Хотите стать
+          корпоративным клиентом?
+          <span><a class="more-link join-us__link-connection" href="#!">Связаться с отделом продаж</a></span>
+        </p>
+        <a class="more-link join-us__link-registration" href="#!">Зарегистрироваться</a>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="footer-nav">
+  <div class="container-main">
+    <nav class="footer-nav__nav-wrapper">
+
+      <nav class="footer-nav-section">
+        <h2 class="footer-nav__list-title">Продукт</h2>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">О продукте</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Приложения и интеграции</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Шаблоны</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Miroverse</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Платформа Разработчика Miro</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Miro для устройств</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Безопасность и соответствие</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Доступность</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Журнал изменений</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav-section">
+        <h2 class="footer-nav__list-title">Решения</h2>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Встречи и воркшопы</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Мозговой штурм</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Agile методы в работе</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Диаграмминг</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Исследование</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Стратегия и планирование</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Интеллект-карты</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Концептуальные карты</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Онлайн-стикеры</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Блок-схемы</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Вайрфреймы</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav-section">
+        <h2 class="footer-nav__list-title">Ресурсы</h2>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Академия Miro</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Служба поддержки</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Блог</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Статус</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Cообщество Miro</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Miro Professional Network</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Miro Эксперты</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Мероприятия Miro</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav-section">
+        <h2 class="footer-nav__list-title">Компания</h2>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">О нас</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Карьера 🚀</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Miro в новостях</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Истории клиентов</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-nav-section">
+        <h2 class="footer-nav__list-title">Тарифы и планы</h2>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Тарифы</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Бизнес</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Предприятия</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Консультанты</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Образование</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Стартапы</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#!">Некоммерческие организации</a></li>
+        </ul>
+      </nav>
+
+    </nav>
+  </div>
+</section>
+		<footer class="footer">
+	<div class="container-main">
+		<div class="footer__main-wrapper">
+
+			<ul class="footer__social-list">
+
+				<li class="footer__social-item">
+
+					<a href="#!" class="footer__social-link"><img class="footer__social-image" src="./img/footer/logo-twitter.svg"
+							width="24" height="24" alt=""></a>
+				</li>
+
+				<li class="footer__social-item">
+					<a href="#!" class="footer__social-link"><img class="footer__social-image"
+							src="./img/footer/logo-facebook.svg" width="24" height="24" alt=""></a>
+				</li>
+
+				<li class="footer__social-item">
+					<a href="#!" class="footer__social-link"><img class="footer__social-image"
+							src="./img/footer/logo-linkedin.svg" width="24" height="24" alt=""></a>
+				</li>
+
+				<li class="footer__social-item">
+					<a href="#!" class="footer__social-link"><img class="footer__social-image"
+							src="./img/footer/logo-instagram.svg" width="24" height="24" alt=""></a>
+				</li>
+
+				<li class="footer__social-item">
+					<a href="#!" class="footer__social-link"><img class="footer__social-image" src="./img/footer/logo-youtube.svg"
+							width="24" height="24" alt=""></a>
+				</li>
+
+			</ul>
+
+			<button class="footer__language" type="button" aria-label="Выбор языка">RU</button>
+			<span>© 2023 Miro</span>
+			<a class="footer__link" href="#!">Условия пользования</a>
+			<a class="footer__link" href="#!">Политика конфиденциальности</a>
+			<a class="footer__link" href="#!">Управление файлами cookies</a>
+
+		</div>
+		<div class="footer__downloads">
+			<a class="footer__download-link" href="#!"><img class="footer__download-image" src="./img/footer/app-store.svg"
+					alt="Логотип 'App Store'" width="134" height="45"></a>
+			<a class="footer__download-link" href="#!"><img class="footer__download-image" src="./img/footer/google-play.svg"
+					alt="Логотип 'Google Play'" width="152" height="45"></a>
+			<a class="footer__download-link" href="#!"><img class="footer__download-image" src="./img/footer/miro.svg"
+					alt="Логотип 'Miro'" width="45" height="45"></a>
+		</div>
+	</div>
+</footer>
+
+
+
+	</main>
+	
+
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
