@@ -14,7 +14,7 @@
     <div class="container">
         <div class="header__row">
             <div class="logo">
-                <img src="./img/miro-logo.svg" alt="Лого">
+                <img src="./../../img/miro-logo.svg" alt="Лого">
             </div>
             <nav class="nav-block">
                 <ul class="nav-list">
@@ -27,18 +27,26 @@
             </nav>
             <div class="header__buttons">
                 <button class="lang-change">
-                    <img class="lang-change__image" src="./img/lang-change.svg" alt="Смена Языка">
+                    <img class="lang-change__image" src="./../../img/lang-change.svg" alt="Смена Языка">
                 </button>
                 <button class="button header__registration">Регистрация</button>
             </div>
 
-            <!-- <button class="mobile-nav-btn">
+            <button class="mobile-nav-btn">
                 <div class="nav-icon"></div>
-            </button> -->
+            </button>
         </div>
     </div>
+    <div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Продукт</a></li>
+		<li><a href="#!">Решения</a></li>
+		<li><a href="#!">Ресурсы</a></li>
+		<li><a href="#!">Предприятия</a></li>
+		<li><a href="#!">Тарифы</a></li>
+	</ul>
+</div>
 </header>
-
 	<main>
 		<section class="hero">
   <div class="container-main">
@@ -59,13 +67,15 @@
         </form>
         <footer class="hero__partners">
           <span class="main-text hero__users-counts">45M+ пользователей</span>
-          <img src="./img/hero/walmart.svg" class="hero__partner" alt="Логотип Walmart">
-          <img src="./img/hero/cisco.svg" class="hero__partner" alt="Логотип Cisco">
-          <img src="./img/hero/deloitte.svg" class="hero__partner" alt="Логотип Deloitte.">
-          <img src="./img/hero/volvo.svg" class="hero__partner" alt="Логотип Volvo">
+          <img src="./../../img/hero/walmart.svg" class="hero__partner" alt="Логотип Walmart">
+          <img src="./../../img/hero/cisco.svg" class="hero__partner" alt="Логотип Cisco">
+          <img src="./../../img/hero/deloitte.svg" class="hero__partner" alt="Логотип Deloitte.">
+          <img src="./../../img/hero/volvo.svg" class="hero__partner" alt="Логотип Volvo">
         </footer>
       </div>
-      <img class="hero__image" src="./img/hero/hero-img.jpg" alt="Пример работы Miro" width="604" height="461">
+      <div class="hero__image-wrapper">
+        <img class="hero__image" src="./../../img/hero/hero-img.jpg" alt="Работа с Miro" width="604" height="461">
+      </div>
     </div>
   </div>
 </section>
@@ -78,16 +88,20 @@
           может общаться, сотрудничать и совместно заниматься творчеством в одном пространстве, из любой точки мира.</p>
         <a class="more-link distant__link" href="#!">Узнать больше</a>
       </div>
-      <img class="distant__image" src="./img/distant/distant-image.jpg" alt="Дистанционная работа вместе с Miro"
-        width="550px" height="535px">
+      <div class="distant__image-wrapper">
+        <img class="distant__image" src="./../../img/distant/distant-image.jpg" alt="Дистанционная работа вместе с Miro"
+          width="550px" height="535px">
+      </div>
     </div>
   </div>
 </section>
 		<section class="all-in">
   <div class="container-main">
-    <div class="all-in__wrapper">
-      <img class="all-in__image" src="./img/all-in/all-in.jpg" alt="Всё с помощью только лишь Miro" width="550px"
-        height="498px">
+    <div class="all-in__main-wrapper">
+      <div class="all-in__image-wrapper">
+        <img class="all-in__image" src="./../../img/all-in/all-in.jpg" alt="Всё с помощью только лишь Miro" width="550px"
+          height="498px">
+      </div>
       <div class="all-in__content">
         <h2 class="main-title all-in__title">Закройте лишние вкладки — всё уже здесь</h2>
         <p class="main-text all-in__description">Редактируете ли вы документы в Google Docs, работаете над задачами в
@@ -104,7 +118,7 @@
       <h2 class="main-title workstyle__title">Подходит для вашего стиля работы</h2>
 
       <div class="tabs workstyle__tabs">
-        <header class="tabs__buttons">
+        <header class="tabs__buttons tabs__buttons--workstyle">
           <button class="tabs__button" data-tab="tab1">Мозговые штурмы</button>
           <button class="tabs__button" data-tab="tab2">Диаграммы</button>
           <button class="tabs__button" data-tab="tab3">Встречи</button>
@@ -117,62 +131,68 @@
       <div class="tabs__wrapper">
 
         <div class="tabs__content" id="tab1">
-          <div class="tabs__text-content">
+          <div
+            class="tabs__text-content tabs__text-content--workstyle tabs__text-content tabs__text-content--workstyle--workstyle">
             <h3 class="tabs__title">Мозговой штурм</h3>
             <p class="tabs__description">Генерируйте творческие идеи и развивайте их с помощью стикеров, изображений,
               интеллект-карт, видео,
               рисования и не только.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="./img/workstyle/tab-1.jpg" alt="Tab1">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image"
+              src="./img/workstyle/tab-1.jpg" alt="Tab1"></div>
         </div>
 
         <div class="tabs__content" id="tab2">
-          <div class="tabs__text-content">
+          <div class="tabs__text-content tabs__text-content--workstyle">
             <h3 class="tabs__title">Диаграммы</h3>
             <p class="tabs__description">Анализируйте данные и визуализируйте результаты с помощью наглядных диаграмм и
               графиков. Диаграммы
               позволяют легко представить сложные данные и выявить закономерности и тренды.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image2.jpg" alt="Tab2">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image" src="image2.jpg"
+              alt="Tab2"></div>
         </div>
 
         <div class="tabs__content" id="tab3">
-          <div class="tabs__text-content">
+          <div class="tabs__text-content tabs__text-content--workstyle">
             <h3 class="tabs__title">Встречи</h3>
             <p class="tabs__description">Организуйте эффективные встречи с помощью различных инструментов и методов.
               Планируйте повестку
               дня, ведите протоколы, делитесь документами и обсуждайте идеи с командой.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image3.jpg" alt="Tab3">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image" src="image3.jpg"
+              alt="Tab3"></div>
         </div>
 
         <div class="tabs__content" id="tab4">
-          <div class="tabs__text-content">
+          <div class="tabs__text-content tabs__text-content--workstyle">
             <h3 class="tabs__title">SCRUM</h3>
             <p class="tabs__description">Планируйте и управляйте проектами с помощью методологии SCRUM. Определяйте
               задачи, устанавливайте сроки
               и отслеживайте прогресс команды в режиме реального времени.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image4.jpg" alt="Tab4">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image" src="image4.jpg"
+              alt="Tab4"></div>
         </div>
 
         <div class="tabs__content" id="tab5">
-          <div class="tabs__text-content">
+          <div class="tabs__text-content tabs__text-content--workstyle">
             <h3 class="tabs__title">Картирование</h3>
             <p class="tabs__description">Анализируйте и структурируйте данные с помощью картирования и схем.
               Картирование позволяет
               визуализировать сложные информации и выявлять взаимосвязи между различными элементами.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image5.jpg" alt="Tab5">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image" src="image5.jpg"
+              alt="Tab5"></div>
         </div>
 
         <div class="tabs__content" id="tab6">
-          <div class="tabs__text-content">
+          <div class="tabs__text-content tabs__text-content--workstyle">
             <h3 class="tabs__title">Дизайн-исследования</h3>
             <p class="tabs__description">Исследуйте потребности и предпочтения пользователей, а также выявляйте
               возможности для
@@ -181,11 +201,12 @@
               пользователях.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image6.jpg" alt="Tab6">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image" src="image6.jpg"
+              alt="Tab6"></div>
         </div>
 
         <div class="tabs__content" id="tab7">
-          <div class="tabs__text-content">
+          <div class="tabs__text-content tabs__text-content--workstyle">
             <h3 class="tabs__title">Планирование</h3>
             <p class="tabs__description">Разрабатывайте стратегии и планы действий для достижения целей проектов.
               Планирование
@@ -193,7 +214,8 @@
               задач.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image7.jpg" alt="Tab7">
+          <div class="tabs__image-wrapper tabs__image-wrapper--workstyle"><img class="tabs__image" src="image7.jpg"
+              alt="Tab7"></div>
         </div>
 
       </div>
@@ -250,7 +272,8 @@
             </div>
 
           </div>
-          <img class="tabs__image" src="./img/for-all-teams/for-all-teams-1.jpg" alt="Tab1">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="./img/for-all-teams/for-all-teams-1.jpg"
+              alt="Tab1"></div>
         </div>
 
         <div class="tabs__content" id="tab2">
@@ -262,7 +285,7 @@
               позволяют легко представить сложные данные и выявить закономерности и тренды.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image2.jpg" alt="Tab2">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="image2.jpg" alt="Tab2"></div>
         </div>
 
         <div class="tabs__content" id="tab3">
@@ -273,7 +296,7 @@
               дня, ведите протоколы, делитесь документами и обсуждайте идеи с командой.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image3.jpg" alt="Tab3">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="image3.jpg" alt="Tab3"></div>
         </div>
 
         <div class="tabs__content" id="tab4">
@@ -284,7 +307,7 @@
               и отслеживайте прогресс команды в режиме реального времени.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image4.jpg" alt="Tab4">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="image4.jpg" alt="Tab4"></div>
         </div>
 
         <div class="tabs__content" id="tab5">
@@ -295,7 +318,7 @@
               визуализировать сложные информации и выявлять взаимосвязи между различными элементами.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image5.jpg" alt="Tab5">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="image5.jpg" alt="Tab5"></div>
         </div>
 
         <div class="tabs__content" id="tab6">
@@ -309,7 +332,7 @@
               пользователях.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image6.jpg" alt="Tab6">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="image6.jpg" alt="Tab6"></div>
         </div>
 
         <div class="tabs__content" id="tab7">
@@ -321,7 +344,7 @@
               задач.</p>
             <a class="more-link tabs__link" href="#!">Узнать больше</a>
           </div>
-          <img class="tabs__image" src="image7.jpg" alt="Tab7">
+          <div class="tabs__image-wrapper"><img class="tabs__image" src="image7.jpg" alt="Tab7"></div>
         </div>
 
       </div>
@@ -433,7 +456,8 @@
     </div>
   </div>
 </section>
-		<section class="footer-nav">
+	</main>
+	<section class="footer-nav">
   <div class="container-main">
     <nav class="footer-nav__nav-wrapper">
 
@@ -509,7 +533,7 @@
     </nav>
   </div>
 </section>
-		<footer class="footer">
+	<footer class="footer">
 	<div class="container-main">
 		<div class="footer__main-wrapper">
 
@@ -560,10 +584,6 @@
 		</div>
 	</div>
 </footer>
-
-
-
-	</main>
 	
 
 	<script src="./js/index.bundle.js"></script>
