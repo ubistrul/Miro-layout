@@ -32,12 +32,13 @@
                 <button class="button header__registration">Регистрация</button>
             </div>
 
-            <button class="mobile-nav-btn">
+            <button type="button" class="mobile-nav-btn" aria-label="Открыть меню навигации" aria-expanded="false"
+                aria-controls="mobile-nav">
                 <div class="nav-icon"></div>
             </button>
         </div>
     </div>
-    <div class="mobile-nav">
+    <div class="mobile-nav" role="navigation">
 	<ul class="mobile-nav__list">
 		<li><a href="#" class="active">Продукт</a></li>
 		<li><a href="#!">Решения</a></li>
@@ -83,7 +84,7 @@
   <div class="container-main">
     <div class="distant__wrapper">
       <div class="distant__content">
-        <h2 class="main-title distant__title">Работайте вместе, где&nbsp;бы вы&nbsp;ни&nbsp;находились</h2>
+        <h2 class="main-title distant__title">Работайте вместе, где бы вы ни находились</h2>
         <p class="main-text distant__description">Работая в&nbsp;офисе, удалённо или в&nbsp;гибридном формате,
           с&nbsp;Miro ваша команда может общаться, сотрудничать и&nbsp;совместно заниматься творчеством в&nbsp;одном
           пространстве, из&nbsp;любой точки мира.</p>
@@ -240,7 +241,7 @@
       </div>
       <div class="tabs__wrapper">
 
-        <div class="tabs__content" id="tab1">
+        <div class="tabs__content tabs__content--for-all-teams" id="tab1">
           <div class="tabs__text-content">
             <ul class="tabs__list">
               <li class="tabs__list-item">Создавайте вайрфреймы</li>
