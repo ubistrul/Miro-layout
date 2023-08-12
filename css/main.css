@@ -591,6 +591,7 @@ html, body {
     padding: 20px 0 21px;
     position: fixed;
     width: 100%;
+    z-index: 999;
   }
   .nav-block {
     display: none;
